@@ -107,3 +107,6 @@ dist
 db
 plugins
 uploads
+
+# Mac OS plx
+.DS_Store
