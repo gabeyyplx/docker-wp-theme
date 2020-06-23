@@ -32,24 +32,60 @@ module.exports = {
             loader: "extract-loader",
           },
           {
-            loader: 'css-loader'
+            loader: "css-loader",
           },
           {
-            loader: 'postcss-loader'
+            loader: "postcss-loader",
           },
           {
-            loader: 'sass-loader'
-          }
-        ]
+            loader: "sass-loader",
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/",
+            },
+          },
+        ],
       },
     ],
   },
   plugins: [
     new BrowserSyncPlugin({
-      host: 'localhost',
+      host: "localhost",
       port: 8080,
-      proxy: 'http://localhost:4000',
-      files: ['./src/*.php']
-    })
-  ]
+      proxy: "http://localhost:4000",
+      files: ["./src/*.php"],
+    }),
+  ],
 }
