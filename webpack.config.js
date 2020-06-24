@@ -1,5 +1,6 @@
 const path = require("path")
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 
 module.exports = {
   entry: ["./src/assets/scripts/index.js", "./src/assets/styles/style.scss"],
@@ -87,5 +88,6 @@ module.exports = {
       proxy: "http://localhost:4000",
       files: ["./src/*.php"],
     }),
+    new CleanWebpackPlugin(),
   ],
 }

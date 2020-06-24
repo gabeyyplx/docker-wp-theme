@@ -110,3 +110,6 @@ uploads
 
 # Mac OS plx
 .DS_Store
+
+# Build script result
+build
