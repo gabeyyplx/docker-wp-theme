@@ -12,4 +12,4 @@
 - start up dev server (browsersync proxy) with `yarn start`
 - create build with `yarn build`
 
-special thx to [n1r4ul](https://www.github.com/n1ru4l) cuz he a good boi
+special thx to [n1ru4l](https://www.github.com/n1ru4l) cuz he a good boi
